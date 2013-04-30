@@ -1,8 +1,8 @@
 #include <unistd.h>
 
 int main(void) {
-	for(;;)
-		fork();
+  for(;;)
+    fork();
 
-	return 0;
+  return 0;
 }

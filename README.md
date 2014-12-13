@@ -1,5 +1,12 @@
 # forkbombs - Collection of forkbombs in various programming languages
 
-## HOMEPAGE
+# EXAMPLE
 
-[http://www.yellosoft.us/forkbombs](http://www.yellosoft.us/forkbombs)
+```
+$ ruby bomb.rb
+...
+```
+
+# HOMEPAGE
+
+http://www.yellosoft.us/forkbombs

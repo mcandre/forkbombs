@@ -1,4 +1,4 @@
-# forkbombs - Collection of forkbombs in various programming languages
+# forkbombs - a collection of forkbombs in various programming languages
 
 # EXAMPLE
 

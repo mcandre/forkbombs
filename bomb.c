@@ -1,8 +1,9 @@
 #include <unistd.h>
 
 int main(void) {
-  for(;;)
+  for (;;) {
     fork();
+  }
 
   return 0;
 }

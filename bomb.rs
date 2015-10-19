@@ -1,14 +1,8 @@
 // bomb.rs
-// Andrew Pennebaker
+// Chad Sharp
 
-use std;
-
-fn bomb() {
-  while true {
-    task::spawn(bomb);
-  }
-}
-
+#[allow(unconditional_recursion)]
 fn main() {
-  task::spawn(bomb);
+    std::thread::spawn(main);
+    main();
 }

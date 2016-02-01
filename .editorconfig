@@ -19,15 +19,23 @@ indent_style = space
 indent_size = 2
 indent_brace_style = K&R
 curly_bracket_next_line = false
-continuation_indent_size 4
+continuation_indent_size = 4
 
-# Makefiles
-[{Makefile*,*.mf}]
+# Make, Go
+[{Makefile*,*.mf,*.go}]
 indent_style = tab
+
+# F#
+[{*.fs,*.fsx}]
+indent_style = space
 
 # Markdown
 [{*.md,*.markdown}]
 indent_size = none
+
+# PEP8
+[*.py]
+indent_size = 4
 
 # JavaScript
 [*.js]

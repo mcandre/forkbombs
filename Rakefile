@@ -20,9 +20,14 @@ task :clean_astyle => [] do
   sh 'find . -type f -name "*.orig" -exec rm {} \\;'
 end
 
+task :gofmt => [] do
+  sh 'gofmt -s -w .'
+end
+
 task :lint => [
   :editorconfig,
-  :astyle
+  :astyle,
+  :gofmt
 ] do
 end
 

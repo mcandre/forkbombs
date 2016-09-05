@@ -9,10 +9,7 @@ end_of_line = lf
 insert_final_newline = true
 charset = utf-8
 trim_trailing_whitespace = true
-
-# Too many exceptions
-max_line_length = 800
-
+max_line_length = 120
 spaces_around_operators = true
 spaces_around_brackets = false
 indent_style = space
@@ -33,8 +30,8 @@ indent_style = space
 [{*.md,*.markdown}]
 indent_size = none
 
-# PEP8
-[*.py]
+# PEP8, Docker
+[{*.py,Dockerfile*}]
 indent_size = 4
 
 # JavaScript
@@ -42,9 +39,17 @@ indent_size = 4
 quote_type = single
 
 # Lisp
-[{*.lisp,*.scm,*.rkt,*.lsp,*.clj,*.el}]
+[{*.lisp,*.scm,*.rkt,*.lsp,*.clj,*.el,*.emacs}]
 indent_size = none
 
+# Pagragraph-oriented text
+[{*.txt,*.text,*.xml,*.*htm*,*.erb,*.tex,*.md,*.markdown,*.textile,*.ps,Makefile*,Rakefile*,*.mf,*.plist,*.bat,*.*sh,.*profile*,.editorconfig,.gitignore*,.*rc*,*.profile,*.epf,*.cfg,Dockerfile*}]
+max_line_length = none
+
+# Bashate
+[{*.sh,*.profile*,*.bash*}]
+indent_size = 4
+
 # Windows files
-[{*.bat,*reg,*.ps1,*.vbs,*.cs,*.csproj,*.fs,*.sln,*.xaml*,*.ahk}]
+[{*.cmd,*.bat,*reg,*.ps1,*.vbs,*.cs,*.csproj,*.fs,*.sln,*.xaml*,*.ahk}]
 end_of_line = crlf

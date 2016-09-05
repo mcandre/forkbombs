@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# Install:
+# ln -s .../.envrc.sample .envrc
+#
+# Uninstall:
+# rm .envrc
+
+source_up
+source "$HOME/.bashrc.d/direnv/gvm.sh"

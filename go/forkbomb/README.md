@@ -11,3 +11,11 @@ $ go get github.com/mcandre/forkbombs/go/forkbomb/...
 ```
 $ go install
 ```
+
+# LINT
+
+Keep the code tidy:
+
+```
+$ make lint
+```

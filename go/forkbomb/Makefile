@@ -9,4 +9,7 @@ govet:
 gofmt:
 	find . -path '*/vendor/*' -prune -o -name '*.go' -type f -exec gofmt -s -w {} \;
 
-lint: govet gofmt
+goimport:
+	find . -path '*/vendor/*' -prune -o -name '*.go' -type f -exec goimports -w {} \;
+
+lint: govet gofmt goimport

@@ -4,9 +4,9 @@ test:
 	forkbomb
 
 govet:
-	find . -name vendor -prune -o -name '*.go' -exec go vet -v {} \;
+	go list ./... | grep -v vendor | xargs go vet -v
 
 gofmt:
-	find . -name vendor -prune -o -name '*.go' -exec gofmt -s -w {} \;
+	find . -path '*/vendor/*' -prune -o -name '*.go' -type f -exec gofmt -s -w {} \;
 
 lint: govet gofmt

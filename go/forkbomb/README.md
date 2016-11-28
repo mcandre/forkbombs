@@ -22,7 +22,15 @@ $ go get github.com/mcandre/forkbombs/go/forkbomb/...
 ```
 $ mkdir -p $GOPATH/src/github.com/mcandre
 $ git clone git@github.com:mcandre/forkbombs.git $GOPATH/src/github.com/mcandre/forkbombs
-$ sh -c "cd $GOPATH/src/github.com/mcandre/forkbombs/go/forkbomb && go install
+$ sh -c "cd $GOPATH/src/github.com/mcandre/forkbombs/go/forkbomb/cmd/forkbomb && go install
+```
+
+# BUILD AND ARCHIVE PORTS
+
+```
+$ make port
+...
+Archived ports in bin/forkbomb-0.0.1.zip
 ```
 
 # LINT

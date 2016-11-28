@@ -1,3 +1,7 @@
+VERSION=0.0.1
+
+.PHONY: port clean clean-ports
+
 all: test
 
 test:
@@ -13,3 +17,11 @@ goimport:
 	find . -path '*/vendor/*' -prune -o -name '*.go' -type f -exec goimports -w {} \;
 
 lint: govet gofmt goimport
+
+port:
+	sh port.sh forkbomb $(VERSION) bin cmd
+
+clean: clean-ports
+
+clean-ports:
+	rm -rf bin

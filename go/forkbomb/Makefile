@@ -19,7 +19,7 @@ goimport:
 lint: govet gofmt goimport
 
 port:
-	sh port.sh forkbomb $(VERSION) bin cmd
+	goport -l $(VERSION)
 
 clean: clean-ports
 

@@ -7,8 +7,10 @@
 * [Git](https://git-scm.com)
 * [Make](https://www.gnu.org/software/make/)
 * [Bash](https://www.gnu.org/software/bash/)
+* [findutils](https://www.gnu.org/software/findutils/)
 * [goimports](https://godoc.org/golang.org/x/tools/cmd/goimports) (e.g. `go get golang.org/x/tools/cmd/goimports`)
-* [goport](https://github.com/mcandre/goport) (e.g. `go get github.com/mcandre/goport/...`)
+* [gox](https://github.com/mitchellh/gox) (e.g. `go get github.com/mitchellh/gox`)
+* [zipc](https://github.com/mcandre/zipc) (e.g. `go get github.com/mcandre/zipc/...`)
 
 # INSTALL FROM REMOTE GIT REPOSITORY
 

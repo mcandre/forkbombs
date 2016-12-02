@@ -1,3 +1,3 @@
 # REQUIREMENTS
 
-* [Lua](http://www.lua.org)
+* [Lua](http://www.lua.org) 5+

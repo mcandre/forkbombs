@@ -6,7 +6,3 @@
 $ ruby bomb.rb
 ...
 ```
-
-# HOMEPAGE
-
-http://www.yellosoft.us/forkbombs

@@ -23,7 +23,7 @@ indent_style = space
 quote_type = single
 
 # Poetry
-[{*.txt,*.md}]
+[{*.txt,*.md,*.erb}]
 indent_size = none
 [{*.lisp,*.lsp,*.scm,*.el,*.rkt,*.abcl,*.ccl,*.clisp,*.ecl,*.sbcl,.eclrc,.sbclrc,*.m,*.mm}]
 indent_size = none
@@ -35,7 +35,7 @@ end_of_line = crlf
 #
 # legacy
 #
-[{*.rb,Gemfile,Rakefile,Vagrantfile,Guardfile*,*.reek,*.pp,*.feature}]
+[{*.rb,Gemfile,*.gemspec,Rakefile,Vagrantfile,Guardfile*,*.reek,*.pp,*.feature}]
 indent_size = 2
 [{*.js,*.json,*.coffee,*.ts,*.dart,*.pjs,.eslintrc,.jshintrc,.jslintrc,.bowerrc}]
 indent_size = 2
@@ -53,7 +53,7 @@ indent_size = 2
 indent_size = 2
 [{*.pl,*.pm,*.f08,*.j,*.lua,*.st,*.io,*.pas,*.oz}]
 indent_size = 2
-[{*.hs,*.ml,*.v,*.sml,*.fs,*.fsx,*.ma,*.psql,*.R}]
+[{*.hs,*.cabal,*.ml,*.v,*.sml,*.fs,*.fsx,*.ma,*.psql,*.R}]
 indent_size = 2
 [{*.awk,*.erl,*.escript,*.yaws,*.bf,*.bs,*.cob,*.factor,*.tcl,*.rl}]
 indent_size = 2

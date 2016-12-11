@@ -19,6 +19,9 @@ gofmt:
 goimport:
 	find . -path '*/vendor/*' -prune -o -name '*.go' -type f -exec goimports -w {} \;
 
+errcheck:
+	find . -path '*/vendor/*' -prune -o -name '*.go' -type f -exec errcheck {} \;
+
 lint: govet golint gofmt goimport
 
 port: archive-ports

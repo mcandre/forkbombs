@@ -4,6 +4,4 @@ int main(void) {
   for (;;) {
     fork();
   }
-
-  return 0;
 }

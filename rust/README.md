@@ -1,3 +1,3 @@
 # REQUIREMENTS
 
-* [rust](https://www.rust-lang.org/en-US/) 0.12
+* [rust](https://www.rust-lang.org/en-US/) 1.16.0+

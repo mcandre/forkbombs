@@ -1,0 +1,4 @@
+{{block "loop" .}}
+LOOP
+{{template "loop"}}
+{{end}}

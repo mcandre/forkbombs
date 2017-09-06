@@ -40,6 +40,10 @@ task :shellcheck => [] do
   sh 'find . \( -wholename \'*/.git/*\' -o -wholename \'*/node_modules*\' -o -name \'*.bat\' \) -prune -o -type f \( -wholename \'*/hooks/*\' -o -name \'*.sh\' -o -name \'*.bashrc*\' -o -name \'.*profile*\' -o -name \'*.envrc*\' \) -print | xargs shellcheck'
 end
 
+task :funk => [] do
+  sh 'funk .'
+end
+
 task :lint => [
   :editorconfig,
   :astyle,
@@ -47,7 +51,8 @@ task :lint => [
   :bashate,
   :shlint,
   :checkbashisms,
-  :shellcheck
+  :shellcheck,
+  :funk
 ] do
 end
 

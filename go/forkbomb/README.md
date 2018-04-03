@@ -2,20 +2,21 @@
 
 https://godoc.org/github.com/mcandre/forkbombs/go/forkbomb/cmd/forkbomb
 
-# REQUIREMENTS
+# RUNTIME REQUIREMENTS
 
-* [Go](https://golang.org) 1.7+ with [$GOPATH configured](https://gist.github.com/mcandre/ef73fb77a825bd153b7836ddbd9a6ddc)
+(None)
 
-## Optional
+# BUILDTIME REQUIREMENTS
 
-* [coreutils](https://www.gnu.org/software/coreutils/coreutils.html)
-* [make](https://www.gnu.org/software/make/)
+* [Go](https://golang.org/) 1.9+
+
+## Recommended
+
+* [Mage](https://magefile.org/) (e.g., `go get github.com/magefile/mage`)
 * [goimports](https://godoc.org/golang.org/x/tools/cmd/goimports) (e.g. `go get golang.org/x/tools/cmd/goimports`)
 * [golint](https://github.com/golang/lint) (e.g. `go get github.com/golang/lint/golint`)
 * [errcheck](https://github.com/kisielk/errcheck) (e.g. `go get github.com/kisielk/errcheck`)
 * [nakedret](https://github.com/alexkohler/nakedret) (e.g. `go get github.com/alexkohler/nakedret`)
-* [gox](https://github.com/mitchellh/gox) (e.g. `go get github.com/mitchellh/gox`)
-* [zipc](https://github.com/mcandre/zipc) (e.g. `go get github.com/mcandre/zipc/...`)
 
 # INSTALL FROM REMOTE GIT REPOSITORY
 
@@ -30,13 +31,8 @@ $ go get github.com/mcandre/forkbombs/go/forkbomb/...
 ```
 $ mkdir -p $GOPATH/src/github.com/mcandre
 $ git clone git@github.com:mcandre/forkbombs.git $GOPATH/src/github.com/mcandre/forkbombs
-$ sh -c "cd $GOPATH/src/github.com/mcandre/forkbombs/go/forkbomb/cmd/forkbomb && go install
-```
-
-# PORT
-
-```
-$ make port
+$ git submodule update --init --recursive
+$ go install ./...
 ```
 
 # LINT
@@ -44,5 +40,5 @@ $ make port
 Keep the code tidy:
 
 ```
-$ make lint
+$ mage lint
 ```

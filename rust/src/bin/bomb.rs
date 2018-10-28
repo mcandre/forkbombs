@@ -1,6 +1,6 @@
-// bomb.rs
-// Chad Sharp
+//! Forkbomb demo
 
+/// CLI entrypoint
 #[allow(unconditional_recursion)]
 fn main() {
   std::thread::spawn(main);

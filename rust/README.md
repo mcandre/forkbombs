@@ -1,3 +1,9 @@
-# REQUIREMENTS
+# bomb: Forkbomb demo
 
-* [rust](https://www.rust-lang.org/en-US/) 1.16.0+
+# RUNTIME REQUIREMENTS
+
+(None)
+
+# CONTRIBUTING
+
+For more details on developing bomb itself, see [DEVELOPMENT.md](DEVELOPMENT.md).

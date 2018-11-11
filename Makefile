@@ -1,6 +1,13 @@
 all: lint
 
-lint: editorconfig
+funk:
+	@funk .
+
+yamllint:
+	@yamllint -s .yamllint
+	@yamllint -s .
 
 editorconfig:
-	flcl . | xargs -n 100 editorconfig-cli check
+	@git ls-files -z | xargs -0 -r -n 100 $(shell npm bin)/eclint check
+
+lint: funk yamllint editorconfig

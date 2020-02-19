@@ -1,0 +1,2 @@
+#!/bin/sh
+stank . | xargs shfmt -w -i 4

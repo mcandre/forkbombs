@@ -1,0 +1,13 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    shlint (0.1.6)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  shlint (~> 0.1.6)
+
+BUNDLED WITH
+   1.17.3

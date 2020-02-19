@@ -1,0 +1,2 @@
+#!/bin/sh
+stank -sh . | xargs slick -n

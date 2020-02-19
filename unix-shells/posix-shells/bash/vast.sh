@@ -8,7 +8,6 @@ export vast_tasks="build \
     v-checkbashisms \
     v-shellcheck \
     v-slick \
-    v-funk \
-    itest"
+    v-funk"
 
 export vast_origin='build'

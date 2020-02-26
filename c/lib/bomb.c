@@ -1,7 +1,9 @@
+// Copyright 2020 YelloSoft
+
 #include <unistd.h>
 
 int main(void) {
     for (;;) {
-        fork();
+        (void) fork();
     }
 }

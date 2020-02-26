@@ -9,6 +9,7 @@ endif()
 add_executable(bomb lib/bomb.cpp)
 
 add_custom_target(cppcheck COMMAND cppcheck -q --enable=all --suppressions-list=$ENV{HOME}/suppressions.cfg lib)
+add_custom_target(cpplint COMMAND find lib -type f -iname '*.cpp' -o -iname '*.cc' -o -iname '*.cxx' -o -iname '*.c' -o -iname '*.hh' -o -iname '*.hxx' -o -iname '*.h' -exec cpplint --filter=-readability/streams,-build/header_guard,-whitespace/parens,-readability/braces,-whitespace/newline,-legal/copyright {} "\;")
 add_custom_target(splint COMMAND find lib -type f -iname '*.[ch]' -exec splint {} "\;")
 add_custom_target(vera++ COMMAND find lib -type f -iname '*.cpp' -o -iname '*.cc' -o -iname '*.cxx' -o -iname '*.c' -o -iname '*.hh' -o -iname '*.hxx' -o -iname '*.h' -exec vera++ -s {} "\;")
-add_custom_target(lint DEPENDS cppcheck splint vera++)
+add_custom_target(lint DEPENDS cppcheck cpplint splint vera++)

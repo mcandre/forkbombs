@@ -1,2 +1,7 @@
 #!/bin/sh
-stank . | xargs checkbashisms -n -p
+set -eu
+IFS="$(printf '%b_' '\n\t ')"
+IFS="${IFS%_}"
+
+stank . |
+    xargs checkbashisms -n -p

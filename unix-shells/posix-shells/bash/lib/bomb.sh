@@ -1,5 +1,6 @@
 #!/bin/bash
-set -euo pipefail
+set -eEuo pipefail
+IFS=$'\n\t '
 
 :() {
     : |

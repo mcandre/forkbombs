@@ -1,4 +1,8 @@
 #!/bin/sh
+set -eu
+IFS="$(printf '%b_' '\n\t ')"
+IFS="${IFS%_}"
+
 v-shfmt &&
     v-bashate &&
     v-shlint &&

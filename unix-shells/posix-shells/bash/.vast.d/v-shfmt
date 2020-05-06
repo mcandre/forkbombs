@@ -1,2 +1,7 @@
 #!/bin/sh
-stank . | xargs shfmt -w -i 4
+set -eu
+IFS="$(printf '%b_' '\n\t ')"
+IFS="${IFS%_}"
+
+stank . |
+    xargs shfmt -w -i 4

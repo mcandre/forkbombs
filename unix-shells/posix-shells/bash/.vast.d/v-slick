@@ -1,2 +1,7 @@
 #!/bin/sh
-stank -sh . | xargs slick -n
+set -eu
+IFS="$(printf '%b_' '\n\t ')"
+IFS="${IFS%_}"
+
+stank -sh . |
+    xargs slick -n

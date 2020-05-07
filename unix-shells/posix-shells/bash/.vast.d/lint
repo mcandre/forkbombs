@@ -1,12 +1,10 @@
 #!/bin/sh
+unset IFS
 set -eu
-IFS="$(printf '%b_' '\n\t ')"
-IFS="${IFS%_}"
 
-v-shfmt &&
-    v-bashate &&
-    v-shlint &&
-    v-checkbashisms &&
-    v-shellcheck &&
-    v-funk &&
-    v-slick
+v-shfmt
+v-bashate
+v-shlint
+v-checkbashisms
+v-shellcheck
+v-funk

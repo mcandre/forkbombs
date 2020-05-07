@@ -1,6 +1,6 @@
 #!/bin/bash
+unset IFS
 set -eEuo pipefail
-IFS=$'\n\t '
 
 :() {
     : |
